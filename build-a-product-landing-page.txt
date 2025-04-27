@@ -1,0 +1,364 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+
+  <header id="header">
+    <nav id="nav-bar">
+      <div class="logo"><img src="https://img.icons8.com/?size=100&id=YaA6lpoN8d0V&format=png&color=000000" alt="One Travel logo" id="header-img">
+        <p class="logo-caption">One Travel</p>
+      </div>
+      <div class="nav-items">
+        <p><a class="nav-link" href="#Our-Tours">Our Tours</a>
+        </p>
+        <p><a class="nav-link" href="#Our-guides">Our Guides</a>
+        </p>
+        <p><a class="nav-link" href="#Sign-up">Sign up</a>
+        </p>
+      </div>
+    </nav>
+  </header>
+  <!-- TITLE -->
+  <main>
+    <header class="main-title">
+      <h1 class="title">One Travel</h1>
+      <p>to explore them all</p>
+    </header>
+
+    <!-- DESTINATIONS -->
+
+    <section class="destination-section" id="Our-Tours">
+      <h2 class="destination-title">Our Tours:</h2>
+      <div class="destination-boxes">
+        <div class="div-destination">
+          <div class="place">
+            <h3>Hobbiton</h3>
+          </div>
+          <div class="place-description">
+            <p>Experience authentic hobbit hospitality in this characteristic village in the Shire.</p>
+          </div>
+          <div class="price">
+            <p>$560</p>
+          </div>
+        </div>
+        <div class="div-destination">
+          <div class="place">
+            <h3>Erebor</h3>
+          </div>
+          <div class="place-description">
+            <p>Explore the legendary Lonely Mountain and the city of Dale</p>
+          </div>
+          <div class="price">
+            <p>$870</p>
+          </div>
+        </div>
+        <div class="div-destination" id="Mordor">
+          <div class="place">
+            <h3>Mordor*</h3>
+          </div>
+          <div class="place-description">
+            <p>Visit the picturesque volcanic land. Experience its ashen skyes and admire Mount Doom.</p>
+          </div>
+          <div class="price">
+            <p>$1620</p>
+          </div>
+        </div>
+      </div>
+      <p class="note">(*travel at your own risk, lembas not included)</p>
+    </section>
+
+<!--   GUIDES   -->
+    <section class="guides-section" id="Our-guides">
+      <h2 class="guides-title">Our Guides</h2>
+      <div class="div-guide">
+        <div class="guide-img"><img alt="Frodo_icon" src="https://img.icons8.com/?size=100&id=u3HamMM5ezY8&format=png&color=000000"></div>
+        <div class="guide-description-box">
+            <h3 class="guide-name">Frodo</h3>
+<p>Frodo specializes in tranquil tours of the Shire. He will accompany you with many stories. The perfect guide for a quiet adventure.</p>
+        </div>
+      </div>
+      
+      <div class="guides-boxes">
+        <div class="div-guide">
+          <div class="guide-img"><img alt="Legolas_icon" src="https://img.icons8.com/?size=100&id=azMtENBzIG8G&format=png&color=000000"></div>
+          <div class="guide-description-box">
+            <h3 class="guide-name">Legolas</h3>
+<p>Legolas will bring you safely and swiftly to the Lonely Mountain, protecting you from the dangers of the road.</p>
+          </div>
+        </div>
+
+        <div class="div-guide">
+          <div class="guide-img"><img alt="Gollum_icon" src="https://img.icons8.com/?size=100&id=9NRMYXn6qjz3&format=png&color=000000"></div>
+          <div class="guide-description-box">
+            <h3 class="guide-name">Gollum</h3>
+<p>Sneaky and unpredictable, Gollum will let you safely* see the incredible landscapes of Mordor, helping you stay hidden in the shadows.</p> 
+          </div>
+        </div>
+            <p class="note">*This statement holds no legal or contractual value</p>
+      </div>
+
+    </section>
+    <section class="example-section"><h2 class="example-title">An example</h2>
+<p class="example-subtitle">of what could await you in the Shire</p>
+      <iframe id="video" src="https://www.youtube.com/embed/s2sVMLr1fDg" alt="video_of_a_party_in_the_shire"></iframe>
+    </section>
+    <!--      SIGNUP      -->
+    
+    <section class="signup-section" id="Sign-up"><h2 class="signup-title">Sign up today!</h2>
+      <form action="https://www.freecodecamp.com/email-submit" id="form"><input id="email" name="email" type="email" placeholder="Type your e-mail here"></input>
+    <input id="submit" type="submit"></input></form>
+    </section>
+  </main>
+<footer>Icons from <a href="https://icons8.com/icons">https://icons8.com/icons</footer>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+html {font-size: 10px;
+scrollbar-color: #B83D49 transparent;
+scroll-padding-top: 100px;}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+  scroll-behavior: smooth
+  }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8d8b8;
+overflow-x: hidden;
+}
+
+#header {position: sticky;
+  top: 0;}
+
+#header-img {
+  width: 6rem;
+margin: 0 1.5rem}
+
+.logo {
+  color: #F8D8B8;
+font-size: 2rem;
+font-family: georgia;
+  font-weight: 700;
+display: flex;
+align-items: center
+}
+
+#nav-bar {
+  background-color: #073635;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+width: 100%;
+font-family: georgia;
+}
+
+.nav-items {
+  display: flex;
+}
+.nav-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #F8D8B8;
+  padding: 0rem 3rem 0rem 0rem;  
+}
+
+.nav-link:hover {
+  color: #B83D49;
+}
+
+/* TITLE */
+
+.main-title {
+  padding: 6rem;
+  text-align: center;
+  color: #073635
+}
+.title {
+  font-family:  Georgia;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+.main-title p {
+  font-family:  Verdana;
+  font-size: 2.8rem;
+}
+
+/* TOURS */
+.destination-section {
+  background-color: #1E2D2F;
+  border-top: 5px dotted #f8d8b8;
+border-bottom: 5px dotted #f8d8b8;
+  padding: 5.5rem 5.5rem 4rem 5.5rem;
+  width: 100%;
+}
+
+.destination-title {
+  font-family:  georgia;
+font-weight: 400;
+  color: #f8d8b8;
+  text-transform: uppercase;
+  font-size: 4rem;
+text-align: center;
+padding: 0 0 5.5rem 0;
+}
+
+.destination-boxes {
+display: flex;
+  justify-content: space-between;
+}
+.div-destination {
+border: 2px solid #1E2D2F;
+border-radius: 45px;
+width: 30%;
+text-align: center;
+display: flex;
+  flex-direction: column;
+justify-content: space-between;
+background-color: #6b9080;
+}
+
+
+.place {
+  font-family:  georgia;
+ font-weight: 400;
+color: #1E2D2F;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+padding: 1rem;
+border-bottom: 2px solid #1E2D2F;
+}
+
+.place-description {font-family:  georgia;
+  font-size: 1.8rem;
+padding: 2.5rem;
+color: #1E2D2F;}
+
+.price {font-family:  verdana;
+ font-weight: 700;
+  font-size: 2rem;
+padding: 2rem;
+color: #1E2D2F;}
+
+.note {
+  font-family:  georgia;
+  font-size: 1.2rem;
+ padding: 1.5rem;
+text-align: right;
+color: #B83D49;
+}
+
+/* GUIDES */
+.guides-section {
+border-bottom: 5px dotted #f8d8b8;
+  padding: 5.5rem 5.5rem 4rem 5.5rem;
+  width: 100%;
+}
+
+.guides-title {
+  font-family:  georgia;
+font-weight: 400;
+  color: #073635;
+  text-transform: uppercase;
+  font-size: 4rem;
+text-align: center;
+padding: 0 0 3rem 0;
+}
+
+.div-guide { display: flex; justify-content: center ; align-items: center; 
+color: #073635;;}
+
+
+.guide-description-box { font-family: Verdana;
+  font-size: 1.8rem;
+padding: 4rem;
+width: 50%;}
+
+.guide-name { padding-bottom: 1.5rem; font-family: Georgia;}
+
+/* EXAMPLE */
+.example-section {background-color: #6b9080;
+  border-top: 5px dotted #f8d8b8;
+border-bottom: 5px dotted #f8d8b8;
+  padding: 5.5rem;
+  width: 100%;
+text-align: center;}
+
+.example-title { font-family:  georgia;
+font-weight: 400;
+  color: #f8d8b8;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+.example-subtitle {
+  font-family:  Verdana;
+  font-size: 2.8rem;
+  color: #f8d8b8;
+padding: 0 0 5.5rem 0;}
+
+iframe {width: 40%;  
+  aspect-ratio: 16 / 9;
+border: 4px solid #B83D49}
+
+/* SIGN UP */
+.signup-section  {background-color: #f8d8b8;
+padding: 5.5rem;
+  width: 100%;
+text-align: center;}
+
+.signup-title { font-family:  georgia;
+font-weight: 600;
+  color: #B83D49;
+  text-transform: uppercase;
+  font-size: 3.8rem;
+padding-bottom: 4rem;}
+
+#email {background-color: #f8d8b8; border: 2px solid #073635; height: 3rem; width: 25%;
+padding: 0.3rem;
+color: #1E2D2F;}
+
+#submit {background-color: #B83D49;
+width: 15%;
+height: 3rem;
+border: 2px solid #073635;
+margin: 2rem 0}
+
+/* FOOTER */
+footer {background-color: #1E2D2F; border-top: 5px dotted #f8d8b8; color: #f8d8b8;  font-size: 1.3rem;
+padding: 2rem; text-align: right}
+
+footer a {color: #f8d8b8; text-decoration: none;}
+
+footer a:hover {color: #B83D49}
+
+
+/* 
+Palette: 
+beige: #f8d8b8
+lighter green: #6b9080
+darker geen: #073635
+darkest green: #1E2D2F
+red: #B83D49 */
+
+** end of undefined **
+
